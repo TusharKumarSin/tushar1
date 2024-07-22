@@ -1,0 +1,2 @@
+music={ "check":"https://www.youtube.com/watch?v=4tywp83zkmk", "stillrolling":"https://www.youtube.com/watch?v=0mCVpUDCkEk","bandana":"https://www.youtube.com/watch?v=j2zxCw3voU8","king":"https://www.youtube.com/watch?v=d2ofxg8pHfQ","you":"https://www.youtube.com/watch?v=IAvw60x0Kn4","bemine":"https://www.youtube.com/watch?v=QfRHgmEGfvw","mashup":"https://www.youtube.com/watch?v=L-VMCv4Y9l8","mvp":"https://www.youtube.com/watch?v=gP4k_iruyAM"
+}
