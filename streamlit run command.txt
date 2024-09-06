@@ -1,0 +1,2 @@
+streamlit run "C:\Users\tusha\OneDrive\Desktop\Multiple disease prediction models\untitled0.py"
+streamlit run "C:\Users\tusha\OneDrive\Desktop\Multiple disease prediction models\multipledisease detection.py"
