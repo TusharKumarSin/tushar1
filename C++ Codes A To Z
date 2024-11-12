@@ -47,3 +47,26 @@ int main()
 
     return 0;
 }
+# Binar to decimal conversion code
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int bit;
+    cout<<"Enter the binary form:";
+    cin>>bit;
+    int bits=bit;
+    int i=0;
+    int ans=0;
+    while(bits!=0){
+        int digit=bits%10;
+        if(digit==1){
+            ans=ans+pow(2,i);
+        }
+        bits=bits/10;
+        i++;
+    }
+    cout<<"The decimal form of binary "<<bit<<" is:"<<ans;
+    return 0;
+}
