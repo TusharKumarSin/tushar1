@@ -47,6 +47,21 @@ int main()
 
     return 0;
 }
+
+# Other way to convert the decimal number into binary form is 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    cout<<"Enter the number you want to convert into binary form= ";
+    int number;
+    cin>>number;
+    bitset<8>a(number);
+    cout<<"The binary form of inputed number "<<number<<" is :"<<a;
+    return 0;
+}
+
+
 # Binar to decimal conversion code
 
 #include<bits/stdc++.h>
@@ -70,3 +85,4 @@ int main(){
     cout<<"The decimal form of binary "<<bit<<" is:"<<ans;
     return 0;
 }
+
