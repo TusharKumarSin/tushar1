@@ -22,3 +22,28 @@ int main()
     return 0;
 }
 source Youtube video:- https://www.youtube.com/watch?v=bWrsk0QizEk&list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA&index=6
+
+## Other way to produce same output is 
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int a;
+    cout<<"Enter the number= ";
+    cin>>a;
+    int n=a;
+    int i=0;
+    int ans=0;
+    while(n!=0){
+        int bit=n&1;
+        ans=(bit*pow(10,i))+ans;
+        n=n/2;
+        i++;
+    }
+    cout<<"Bits representation of number "<<a<<" is "<<ans<<endl;
+
+    return 0;
+}
