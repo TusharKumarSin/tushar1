@@ -86,3 +86,39 @@ int main(){
     return 0;
 }
 
+
+## Numbers of notes calculation using switch statement , The code is 
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int amount,remaing;
+    cout<<"Enter the amount you want to withdraw=";
+    cin>>amount;
+    int note100,note50,note20,note1;
+    remaing=amount;
+    switch(1){
+        case 1:
+        note100=remaing/100;
+        remaing=remaing%100;
+        cout<<"Numbers of 100 rupees Notes is="<<note100<<endl;
+        case 2:
+        note50:
+        note50=remaing/50;
+        remaing=remaing%50;
+        cout<<"Numbers of 50 rupees Notes is="<<note50<<endl;
+        case 3:
+        note20=remaing/20;
+        remaing=remaing%20;
+        cout<<"Numbers of 20 rupees Notes is="<<note20<<endl;
+        case 4:
+        note1=remaing;
+        cout<<"Numbers of 1 rupees Notes is="<<note1<<endl;
+        break;
+        default:
+        cout<<"Invalid entry Please correct Entered Amount!"<<endl;  
+        }
+        return 0;
+}
+
