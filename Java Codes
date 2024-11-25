@@ -66,3 +66,37 @@ import java.util.Scanner;
     }
 }
 
+### print star pattern of type :-
+   *
+  **
+ +++
+****
+import java.util.Scanner;
+
+ class Practice_set {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number of Rows:");
+        int rows=sc.nextInt();
+//        System.out.println("Enter the number of Columns:");
+//        int m=sc.nextInt();
+        int a=1;
+        while(a<=rows){
+            int b=1;
+            while(b<=rows-a){
+                System.out.print(" ");
+                b++;
+
+            }
+            int k=1;
+            while(k<=a){
+                System.out.print("*");
+                k++;
+            }
+            System.out.println();
+            a++;
+        }
+
+    }
+}
+
