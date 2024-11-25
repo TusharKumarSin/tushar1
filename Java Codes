@@ -1,0 +1,31 @@
+## Java code for calculator using switch statement 
+
+import java.util.Scanner;
+
+ class Practice_set {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the number:");
+        int number=sc.nextInt();
+        System.out.print("Enter the other number:");
+        int number2=sc.nextInt();
+        System.out.print("Select the operator:");
+        char operator=sc.next().charAt(0);
+        switch(operator){
+            case '+':
+                System.out.print("value of "+number+" and "+number2+"="+(number+number2));
+                break;
+            case 'X':
+                System.out.println("value of "+number+" and "+number2+"="+(number*number2));
+                break;
+            case '/':
+                System.out.println("value of "+number+" and "+number2+"="+(number/number2));
+                break;
+            case '-':
+                System.out.println("value of "+number+" and "+number2+"="+(number-number2));
+                break;
+            default:
+                System.out.println("Entered Invalid Arithmetic operator!");
+        }
+    }
+}
