@@ -301,3 +301,13 @@ import java.util.Scanner;
 
     }
 }
+
+
+###
+public void greet(String name) {  // "name" is a parameter
+    System.out.println("Hello, " + name);
+}
+
+// ...
+
+greet("Alice"); // "Alice" is an argument
