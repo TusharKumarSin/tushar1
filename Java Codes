@@ -311,3 +311,38 @@ public void greet(String name) {  // "name" is a parameter
 // ...
 
 greet("Alice"); // "Alice" is an argument
+
+### For new line code
+
+import java.util.Scanner;
+
+ class Practice_set {
+
+         public static void main(String args[]){
+             Scanner scanner = new Scanner(System.in);
+
+             System.out.print("Enter the number of elements: ");
+             int n = scanner.nextInt(); // Number of elements in the array
+             scanner.nextLine(); // Consume the newline
+
+             String[] dynamicArgs = new String[n]; // Create an array for strings
+
+             System.out.println("Enter the elements:");
+             for (int i = 0; i < n; i++) {
+                 dynamicArgs[i] = scanner.nextLine(); // Populate the array
+             }
+
+             // Display the array
+             System.out.println("You entered:");
+             for (int i = 0; i < dynamicArgs.length; i++) {
+                 System.out.println("dynamicArgs[" + i + "]: " + dynamicArgs[i]);
+             }
+
+         }
+     }
+
+
+
+
+
+
