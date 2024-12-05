@@ -341,6 +341,40 @@ import java.util.Scanner;
          }
      }
 
+### Checking the entered number whether it is the power of 2 or not:-
+
+import java.util.Scanner;
+import java.lang.Math;
+ class Practice_set {
+         public static void main(String args[]){
+             System.out.println("Enter the number :");
+             Scanner sc=new Scanner(System.in);
+             int n=sc.nextInt();
+             if((n>0&&(n&(n-1))==0)){
+                 System.out.println(n+" is the power of 2");
+             }else{
+                 System.out.println(n+" is not the power of 2");
+             }
+         }
+     }
+
+### Numbers of 1s in the entered number is code is:-
+
+import java.util.Scanner;
+import java.lang.Math;
+ class Practice_set {
+         public static void main(String args[]){
+             System.out.println("Enter the number :");
+             Scanner sc=new Scanner(System.in);
+             int n=sc.nextInt();
+             int count=0;
+             while(n!=0){
+                 count+=(n&1);
+                 n=n>>1;
+             }
+             System.out.println(count);
+         }
+     }
 
 
 
