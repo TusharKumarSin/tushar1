@@ -376,6 +376,52 @@ import java.lang.Math;
          }
      }
 
+#### Decimal to binary representation and binary to decimal representation function code :-
+
+import java.util.Scanner;
+import java.lang.Math;
+ class Practice_set {
+     public static void binarep(int num,int n){
+         int i=0;
+         int ans=0;
+         while(n!=0){
+             int bit=n&1;
+             ans=(bit*((int) Math.pow(10, i)))+ans;
+             n=n/2;
+             i++;
+
+         }
+         System.out.println(num+" bit representation is "+ans);
+     }
+public static void decimalrep(int binary,int bin){
+         int i=0;
+         int ans=0;
+         while(binary!=0){
+             int digit=binary%10;
+             if(digit==1){
+                 ans=ans+((int)Math.pow(2,i));
+             }
+             binary=binary/10;
+             i++;
+         }
+    System.out.println("Decimal representation of "+bin+" number is "+ans);
+}
+         public static void main(String args[]){
+             System.out.println("Enter the number :");
+             Scanner sc=new Scanner(System.in);
+             int num=sc.nextInt();
+             int n=num;
+             decimalrep( num, n);
+
+
+
+         }
+     }
+
+
+
+
+
 
 
 
