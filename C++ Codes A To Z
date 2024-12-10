@@ -178,3 +178,50 @@ vector<vector<int>> findTriplets(vector<int>arr, int n, int K) {
 	}
 	return ans;
 }
+
+### Squarat Root of numbers :
+### with Time complexity of O(logn)
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int mySqrt(int x) {
+        int start=0;
+        int end=x;
+        long long int mid=start+(end-start)/2;
+        long long int ans=0;
+        while(start<=end){
+            if((mid*mid)==x){
+                return mid;
+            }else if((mid*mid)<x){
+                start=mid+1;
+                ans=mid;
+
+            }else{
+                end=mid-1;
+            }
+            mid=start+(end-start)/2;
+        }
+        return ans;
+        
+    }
+    double precision(int n,int prec,int tempsol){
+        double factor=1;
+        double ans=tempsol;
+        for(int i=0;i<prec;i++){
+            factor=factor/10;
+            for(double j=ans;j*j<n;j=j+factor){
+                ans=j;
+            }
+        }
+        return ans;
+    }
+
+int main() {
+    int n;
+    cout<<"Enter the number whom sqar root you want:";
+    cin>>n;
+    int tempsol=mySqrt(n);
+    cout<<"Answer of the solution is:"<<precision(n,4,tempsol);
+    return 0;
+}
