@@ -493,6 +493,40 @@ import java.lang.Math;
          }
      }
 
+### Tower Of Hanoi Code.
+   *     *    *
+  ***    *    *
+ *****   *    *
+*******  *    *
+****************
+
+import java.util.Scanner;
+import java.lang.Math;
+ class Practice_set {
+         public static void Tower_Hanoi(int disc,String start,String helper,String destination){
+            if(disc==1){
+                System.out.println("Move 1st disc from "+start+" to"+destination);
+                return ;
+            }
+            Tower_Hanoi(disc-1,start,destination,helper);
+             System.out.println("Moves "+disc+" disc from "+start+" to "+destination);
+             Tower_Hanoi(disc-1,helper,start,destination);
+         }
+         public static void main(String args[]){
+           Scanner sc=new Scanner(System.in);
+           System.out.print("Enter the number of disc you want to enter:");
+           int numbers=sc.nextInt();
+           Tower_Hanoi(numbers," Start"," Helper"," Destination");
+
+
+         }
+     }
+
+
+
+
+
+
 
 
 
