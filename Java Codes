@@ -522,6 +522,35 @@ import java.lang.Math;
          }
      }
 
+### Reverse String printing Java code like:-
+  "aeiou" to "uoiea"
+
+import java.util.Scanner;
+import java.lang.Math;
+ class Practice_set {
+public static void printRev(String src,int index){
+    if(index==0){
+        System.out.print(src.charAt(index));
+        return ;
+    }
+    System.out.print(src.charAt(index));
+    printRev(src,index-1);
+}
+         public static void main(String args[]){
+             Scanner sc=new Scanner(System.in);
+             System.out.print("Enter the Random string:");
+             String src=sc.nextLine();
+             int size=src.length()-1;
+             printRev(src,size);
+
+
+         }
+     }
+
+
+
+
+
 
 
 
