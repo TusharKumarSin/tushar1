@@ -548,6 +548,46 @@ public static void printRev(String src,int index){
      }
 
 
+### Preinting the first occurrence of string character and last occurrence character usin the java code is:
+
+import java.sql.SQLOutput;
+import java.util.Scanner;
+import java.lang.Math;
+ class Practice_set {
+public static int first=-1;
+public static int last=-1;
+public static void number_of_occurrence(String str,int idex,char element){
+
+    if(idex==str.length()){
+        System.out.println("First occurrence of element "+element+" is:"+first);
+        System.out.println("Last occurrence of element "+element+" is"+last);
+        return;
+
+    }
+    char currentChar=str.charAt(idex);
+    if(currentChar==element){
+        if(first==-1){
+            first=idex;
+        }else{
+            last=idex;
+        }
+    }
+    number_of_occurrence(str,idex+1,element);
+}
+         public static void main(String args[]){
+             Scanner sc=new Scanner(System.in);
+             System.out.print("Enter the Random string:");
+             String str=sc.nextLine();
+             number_of_occurrence(str,0,'a');
+
+
+         }
+     }
+
+
+
+
+
 
 
 
