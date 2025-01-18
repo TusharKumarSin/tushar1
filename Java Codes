@@ -583,6 +583,41 @@ public static void number_of_occurrence(String str,int idex,char element){
 
          }
      }
+### Checking the given array is strictily increasingly sorted or not like {1,2,2,0,4}
+
+import java.sql.SQLOutput;
+import java.util.Scanner;
+import java.lang.Math;
+ class Practice_set {
+
+ public static boolean isSorted(int arr[],int idex){
+     if(idex==arr.length-1){
+         return true;
+     }
+     if(arr[idex]<arr[idex+1]){
+         return isSorted(arr,idex+1);
+     }else{
+         return false;
+     }
+ }
+         public static void main(String args[]){
+             Scanner sc=new Scanner(System.in);
+             int arr[]={1,2,2,0,4};
+             if(isSorted(arr,0)){
+                 System.out.println("The given array is sorted");
+             }else{
+                 System.out.println("The given array is un-sorted");
+             }
+
+
+
+         }
+     }
+
+
+
+
+
 
 
 
