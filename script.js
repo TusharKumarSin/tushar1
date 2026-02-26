@@ -755,8 +755,8 @@ const rJson=JSON.parse(`{
     "value": 0.160713815
     }
     }
-    }
-    `)
+    }`)
+    
 console.log(rJson);
 for(let key of Object.keys(rJson["data"])){
     console.log(key);
